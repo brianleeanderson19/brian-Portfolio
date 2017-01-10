@@ -9,16 +9,46 @@ class PortfoliosController < ApplicationController
     end
 
     def create
-        @portfolio_items = Portfolio.new(params.require(:portfolio).permit(:title, :subtitle, :body))
+        @portfolio_items = Portfolio.new(portfolio_params)
 
-    respond_to do |format|
+    
       if @portfolio_items.save
-        format.html { redirect_to portfolios_path, notice: 'Portfolio is now live.' }
-        format.json { render :show, status: :created, location: @portfolio_items }
+        redirect_to @portfolio_items
+        
       else
-        format.html { render :new }
-        format.json { render json: @portfolio_items.errors, status: :unprocessable_entity }
-      end
+        render :new
+      
     end
+  end
+
+  def show
+    @portfolio_items = Portfolio.find(params[:id])
+
+  end
+
+  def edit
+    @portfolio_items = Portfolio.find(params[:id])
+  end
+
+  def update
+    @portfolio_items = Portfolio.find(params[:id])
+    if @portfolio_items.update(portfolio_params)
+      redirect_to @portfolio_items
+    else
+
+      render :edit  
+  end
+end
+
+  def destroy
+    @portfolio_items = Portfolio.find(params[:id])
+    @portfolio_items.destroy
+    redirect_to portfolios_path
+  end
+
+  private
+
+  def portfolio_params
+    params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image)
   end
 end
