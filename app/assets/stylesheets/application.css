@@ -14,6 +14,9 @@
  *= require_self
  */
 
+thead {
+    font-size: 30px;
+}
 body {
     background-image: url("http://images.gofreedownload.net/2/fine-geometry-solid-backgrounds-56074.jpg");
 
@@ -24,9 +27,31 @@ body {
 }
 
 h1 {
+    font-size: 40px;
     color: white;
 }
 
 p {
     color: white;
 }
+
+tr {
+    color: white;
+}
+
+td {
+    color: white;
+}
+
+a {
+    color: purple;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
