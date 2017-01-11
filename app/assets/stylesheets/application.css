@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background-image: url("http://images.gofreedownload.net/2/fine-geometry-solid-backgrounds-56074.jpg");
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
