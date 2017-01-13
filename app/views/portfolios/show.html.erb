@@ -6,6 +6,8 @@
 
 <p><%= @portfolio_items.body %></p>
 
+<h2>Technologies Used:</h2>
+
 <p><%= image_tag @portfolio_items.main_image unless @portfolio_items.main_image.nil? %></p>
 
 <%= link_to 'Back', portfolios_path %>
@@ -13,3 +15,7 @@
 <%= link_to 'Edit', edit_portfolio_path(@portfolio_items) %>
 
 <%= link_to 'Delete', portfolio_path(@portfolio_items), method: :delete %>
+
+<%= @portfolio_items.technologies.each do |t| %>
+    <p><%= t.name %></p>
+    <% end %>
