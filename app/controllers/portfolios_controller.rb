@@ -6,7 +6,10 @@ class PortfoliosController < ApplicationController
     def new
         @portfolio_items = Portfolio.new
         3.times { @portfolio_items.technologies.build }
-        
+    end
+
+    def angular
+      @angular_portfolio_items = Portfolio.angular
     end
 
     def create
