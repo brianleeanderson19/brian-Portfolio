@@ -33,7 +33,7 @@ h1 {
 }
 
 p {
-    color: black;
+    color: white;
 }
 
 tr {
@@ -61,4 +61,8 @@ a:visited {
 .leftTitle {
     color: orange;
 }
+
+label {
+    color: darkblue;
+
 
