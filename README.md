@@ -37,7 +37,7 @@ Things you may want to cover:
 ### Code Example
 ```ruby
 def my_great_method
-    puts "here is is"
+    puts "here it is"
 end
 ```
 
