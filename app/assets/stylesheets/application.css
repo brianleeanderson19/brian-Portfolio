@@ -14,25 +14,34 @@
  *= require_self
  */
 
-thead {
-    font-size: 30px;
-}
+
 body {
-    background-image: url("https://www.snowskool.com/uploads/files/Snowboarding_Switch.jpg");
+    background-image: url("http://snowboarding.transworld.net/wp-content/blogs.dir/442/files/2013/06/gigi_ruf_andy_wright_snowboarding_photos.jpg");
 
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    background-position: center;
 
+}
+
+thead {
+    font-size: 30px;
 }
 
 h1 {
-    font-size: 40px;
+    margin: 10px;
+    padding: 25px;
+    font-size: 3em;
     color: white;
+    background-color: #930707;
+    width: 20%;
+
+
 }
 
 p {
-    color: white;
+    color: black;
 }
 
 tr {
@@ -60,6 +69,11 @@ a:visited {
 }
 
 label {
-    color: white;
+    color: black;
+}
+
+#portfolio_items {
+    font-size: 2em;
+    padding: 25px;
 }
 
