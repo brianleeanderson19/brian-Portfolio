@@ -38,18 +38,21 @@ h1 {
     width: 20%;
 
 
+
 }
 
 p {
-    color: black;
+    color: white;
 }
 
 tr {
-    color: white;
+    color: darkgray;
+
 }
 
 td {
-    color: white;
+    color: black;
+    background-color: lightgray opacity: .5;
 }
 
 a {
@@ -65,10 +68,12 @@ a:visited {
 }
 
 .blog_title {
+=
     color: orange;
 }
 
 label {
+
     color: black;
 }
 
@@ -76,4 +81,8 @@ label {
     font-size: 2em;
     padding: 25px;
 }
+
+    color: darkblue;
+
+
 
