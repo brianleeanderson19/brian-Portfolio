@@ -5,27 +5,14 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th>Blog Title</th>
       <th>Body</th>
       <th colspan="4"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-
-        <td class = "blog_title"><%= blog.title %></td>
-
-        <td class="leftTitle"><%= blog.title %></td>
-
-        <td><%= blog.body %></td>
-        <td><%= link_to blog.status, toggle_status_blog_path(blog) %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <%= render @blogs %>
   </tbody>
 </table>
 
