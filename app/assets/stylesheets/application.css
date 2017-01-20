@@ -68,7 +68,9 @@ label {
     padding: 25px;
 }
 
-    color: darkblue;
+.top a {
+    color: brown;
+}
 
 
 
