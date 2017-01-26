@@ -1,10 +1,18 @@
 class PortfoliosController < ApplicationController
   layout 'portfolio'
-  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
   
     def index
-        @portfolio_items = Portfolio.all
+        @portfolio_items = Portfolio.by_position
     end
+
+    def sort
+      params[:order].each do |key, value|
+        Portfolio.find(value[:id]).update(position: value[:position])
+      end
+    end
+
+    render nothing: true
 
     def new
         @portfolio_item = Portfolio.new
@@ -19,18 +27,17 @@ class PortfoliosController < ApplicationController
         @portfolio_item = Portfolio.new(portfolio_params)
 
     
-      if @portfolio_item.save
-        redirect_to portfolio_show_path(@portfolio_item)
+        if @portfolio_item.save
+          redirect_to portfolio_show_path(@portfolio_item)
         
-      else
-        render :new
+        else
+          render :new
       
+        end
     end
-  end
 
   def show
     @portfolio_item = Portfolio.find(params[:id])
-
   end
 
   def edit
@@ -39,13 +46,13 @@ class PortfoliosController < ApplicationController
 
   def update
     @portfolio_item = Portfolio.find(params[:id])
-    if @portfolio_item.update(portfolio_params)
-      redirect_to portfolio_show_path(@portfolio_item)
-    else
+      if @portfolio_item.update(portfolio_params)
+        redirect_to portfolio_show_path(@portfolio_item)
+      else
 
       render :edit  
+      end
   end
-end
 
   def destroy
     @portfolio_item = Portfolio.find(params[:id])
