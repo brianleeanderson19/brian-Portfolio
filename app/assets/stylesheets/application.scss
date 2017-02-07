@@ -14,12 +14,14 @@ a:hover {
 
 /* Custom default button */
 .btn-secondary,
-.btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: white;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: #4f0c0c;
+}
+
+.btn-secondary:hover {
+  color: #3a3333;
 }
 
 
