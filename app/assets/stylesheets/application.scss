@@ -1,14 +1,9 @@
 @import "bootstrap";
 @import "gritter";
 
-
 /*
  * Globals
  */
-
-* {
-  font-family: 'VT323', monospace;
-}
 
 /* Links */
 a,
@@ -167,7 +162,7 @@ body {
 }
 
 /*
- * Custom styles
+ * Custom Styles
  */
 
 .card-block {
@@ -183,7 +178,7 @@ body {
   text-align: right;
 }
 
-.login > .card{
+.login > .card {
   width: 22rem;
   margin: 0 auto;
   float: none;
@@ -203,8 +198,8 @@ body {
   width: auto;
   height: auto;
   z-index: -100;
-  -webkit-transform: translatex(-50%) translateY(-50%);
-  transform: translatex(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   background: image-url('home_bg.png') no-repeat;
   background-size: cover;
 }
@@ -218,14 +213,30 @@ body {
   margin: 20px;
 }
 
+.tech-news > .card {
+  padding: 30px;
+}
+
 .tech-news a {
+  color: green;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
   color: blue;
 }
-
-.tech-news > .card{
- padding: 10px;
-}
-
 
 
 
