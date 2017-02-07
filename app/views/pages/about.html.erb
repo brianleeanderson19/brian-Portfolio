@@ -15,12 +15,45 @@
           <p>My name is Brian Anderson, and I'm excited to begin my Development career. Coding has been quite the adventure so far and I can't wait to see where it takes me.</p>
           <p>I've been married for a little over a year.</p>
           <p>In the winter, snowboarding is a really big part of my life. Basketball also is very high on my list of things I enjoy. I'm a very outdoorsy type of guy.</p>
-        </div>
+        
 
-        <%= @skills.each do |skill| %>
-        <% end %>
+        <p>
+          <button class="btn btn-primary" 
+                  type="button" 
+                  data-toggle="collapse" 
+                  data-target="#jobHistory"
+                  aria-expanded="false" 
+                  aria-controller="jobHistory">Job History</button>
 
+          <button class="btn btn-primary" 
+                  type="button" 
+                  data-toggle="collapse" 
+                  data-target="#education"
+                  aria-expanded="false" 
+                  aria-controller="education">Education</button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Job 1
+            </div>
+            <div class="card card-block">
+              Job 2
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              School 1
+            </div>
+            <div class="card card-block">
+              School 2
+            </div>
+          </div>
+        </p>
       </div>
+    </div>
   </div>
 </div>
 
