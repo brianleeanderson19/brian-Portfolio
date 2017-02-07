@@ -45,6 +45,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-family: 'Hammersmith One', sans-serif;
+  color: white;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -288,6 +289,13 @@ h6, .h6 {
   color: #63f9f4;
 }
 
+label {
+  color: white;
+}
+
+em {
+  color: white;
+}
 
 
 
