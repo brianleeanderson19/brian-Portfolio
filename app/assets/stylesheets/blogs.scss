@@ -50,6 +50,23 @@ h6, .h6 {
 }
 
 /* Nav links */
+.navbar {
+  background-color: #a50000;
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #0275d8;
+}
+
 .nav-link {
   position: relative;
   padding: 1rem;
@@ -114,19 +131,30 @@ h6, .h6 {
 /* Sidebar modules for boxing content */
 .sidebar-module {
   padding: 1rem;
-  /*margin: 0 -1rem 1rem;*/
+  background-color: #2d333d;
+  margin: 10px;
+  text-align: center;
+  border-radius: .5rem;
+}
+
+.sidebar-module h4 {
+  color: white;
+}
+
+.sidebar-module p {
+  color: #0275d8;
 }
 .sidebar-module-inset {
   padding: 1rem;
-  background-color: #f5f5f5;
-  border-radius: .25rem;
+  background-color: #2d333d;
+  border-radius: .5rem;
+  margin: 10px;
 }
 .sidebar-module-inset p:last-child,
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
   margin-bottom: 0;
 }
-
 
 /* Pagination */
 .blog-pagination {

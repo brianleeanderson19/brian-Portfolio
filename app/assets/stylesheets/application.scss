@@ -13,15 +13,22 @@ a:hover {
 }
 
 /* Custom default button */
+.btn-primary,
 .btn-secondary,
 .btn-secondary:focus {
   color: white;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #4f0c0c;
+  background-color: #0275d8;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  border: none;
 }
 
 .btn-secondary:hover {
-  color: #3a3333;
+  color: white;
+  background-color: #a50000;
 }
 
 
@@ -195,6 +202,7 @@ h6, .h6 {
   width: 22rem;
   margin: 0 auto;
   float: none;
+  border-radius: .5rem;
 }
 
 .app-nav span {
@@ -231,11 +239,11 @@ h6, .h6 {
 }
 
 .tech-news a {
-  color: green;
+  color: #0275d8;
 }
 
 .app-card-container {
-  color: #63f9f4;
+  color: #0275d8;
   text-align: left;
 }
 
@@ -248,7 +256,7 @@ h6, .h6 {
 }
 
 .app-card-container a {
-  color: #63f9f4;
+  color: #0275d8;
 }
 
 .card-block {
@@ -266,7 +274,8 @@ h6, .h6 {
 }
 
 .card {
-  background-color: #212223;
+  background-color: #2d333d;
+  border-radius: .5rem;
 }
 
 .card h1 {
@@ -288,7 +297,7 @@ h6, .h6 {
 }
 
 .card.card-block{
-  color: #63f9f4;
+  color: white;
 }
 
 label {
@@ -299,8 +308,9 @@ em {
   color: white;
 }
 
-
-
+iframe {
+  margin-right: 40px;
+}
 
 
 

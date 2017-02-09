@@ -9,22 +9,6 @@
 
           <%= image_tag "pineapple.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
 
-        <div class="skills">
-          <% @skills.each do |skill| %>
-            <div class="skill">
-              <h4><%= skill.title %></h4>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped bg-warning"
-                     role="progressbar"
-                     aria-valuenow="<%= skill.percent_utilized %>"
-                     aria-valuemax="100"
-                     style="width: <%= skill.percent_utilized %>%"
-                ></div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-
         </div>
 
         <div class="col-md-8">
@@ -47,6 +31,13 @@
                   data-target="#education"
                   aria-expanded="false" 
                   aria-controller="education">Education</button>
+
+                  <button class="btn btn-primary" 
+                  type="button" 
+                  data-toggle="collapse" 
+                  data-target="#skills"
+                  aria-expanded="false" 
+                  aria-controller="education">Skills</button>
         </p>
 
         <p>
@@ -70,6 +61,27 @@
               Southern Utah University
             </div>
           </div>
+
+          <div class="collapse" id="skills">
+            <div class="card card-block">
+             <div class="skills">
+              <% @skills.each do |skill| %>
+                <div class="skill">
+                  <h4><%= skill.title %></h4>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning"
+                         role="progressbar"
+                         aria-valuenow="<%= skill.percent_utilized %>"
+                         aria-valuemax="100"
+                         style="width: <%= skill.percent_utilized %>%"
+                    ></div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+            </div>
+          </div>
+
         </p>
       </div>
     </div>
