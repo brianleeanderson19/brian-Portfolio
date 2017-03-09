@@ -243,7 +243,6 @@ h6, .h6 {
 }
 
 .app-card-container {
-  color: #0275d8;
   text-align: left;
 }
 
@@ -274,6 +273,7 @@ h6, .h6 {
 }
 
 .card {
+  opacity: .9;
   background-color: #2d333d;
   border-radius: .5rem;
 }
@@ -314,6 +314,13 @@ iframe {
 
 div.inner-cover {
   background-image: url(home_bg.png);
+}
+
+.about-card {
+  opacity: .9;
+  background-color: #2d333d;
+  border-radius: .5rem;
+  padding: 40px;
 }
 
 

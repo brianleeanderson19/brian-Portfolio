@@ -1,5 +1,5 @@
 <div class="app-card-container">
-  <div class="card">
+  <div class="about-card">
     <h1>All about me.</h1>
 
       <hr>
@@ -12,9 +12,11 @@
         </div>
 
         <div class="col-md-8">
-          <p>My name is Brian Anderson, and I'm excited to begin my Development career! Coding has been quite the adventure so far and I can't wait to see where it takes me.</p>
+          <p>My name is Brian Anderson, and I'm excited to begin my Development career! I chose to get into programming because I've always been passionate about building things! Growing up I've always been involved with woodworking and decided to put this love for building into code.</p>
 
-          <p>I've been married for a little over a year. In the winter, snowboarding is a really big part of my life. I also really like to watch and play basketball.</p>
+          <p>I've been married for a little over a year. Some of the things I really enjoy are snowboarding in the winter, longboarding in the summer, watching and playing basketball year round and if I have any time after that I also love video games.</p>
+
+          <p>I also started my own small smoothie company called The Juice Box Hero. In doing so I've learned a lot about how hard you need to work to get something out of nothing. I apply this mindset in everything I do. I love working hard whether that's independantly or in group settings. If you have any questions I'd love to hear from you!</p>
         
 
         <p>
@@ -43,42 +45,42 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Vivint - 5 Months
+              Blendtec: May 2013 - Jan 2017 
+              <p>I managed a team which had up to 10 people. My job was to coach them up to lean manufacturing standards. We worked with automated robots in production assembly. I worked with the Microsoft Suite.</p>
             </div>
             <div class="card card-block">
               Vantage Marketing - 3 Months
             </div>
             <div class="card card-block">
-              Blendtec - 4 Years
+              Vivint - 5 Months
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              Snow College
+              Bottega Tech
             </div>
             <div class="card card-block">
               Southern Utah University
             </div>
+            <div class="card card-block">
+              Snow College
+            </div>
+
           </div>
 
           <div class="collapse" id="skills">
             <div class="card card-block">
-             <div class="skills">
-              <% @skills.each do |skill| %>
-                <div class="skill">
-                  <h4><%= skill.title %></h4>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-warning"
-                         role="progressbar"
-                         aria-valuenow="<%= skill.percent_utilized %>"
-                         aria-valuemax="100"
-                         style="width: <%= skill.percent_utilized %>%"
-                    ></div>
-                  </div>
-                </div>
-              <% end %>
+              HTML
             </div>
+            <div class="card card-block">
+              CSS
+            </div>
+            <div class="card card-block">
+              Ruby
+            </div>
+            <div class="card card-block">
+              Ruby on Rails
             </div>
           </div>
 
