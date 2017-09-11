@@ -25,6 +25,7 @@
       <% if logged_in?(:site_admin) %>
       <div class="">
         <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+        <%= link_to "Delete Item", portfolio_path, method: :delete, data: { confirm: "Are you sure you want to delete this project?" } %>
       </div>
       <% end %>
     </div>
