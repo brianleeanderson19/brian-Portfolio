@@ -1,15 +1,17 @@
 <div class="inner cover">
-  <h1 class="cover-heading">Tweets about the Utah Jazz</h1>
+  <h1 class="cover-heading tweetsHeader">Tweets about the Utah Jazz</h1>
   
-  <div class="row">
-    <% @tweets.each do |tweet| %>
-      <div class="col-md-6">
-        <div class="tech-news">
-          <div class="card">
-            <%= twitter_parser tweet %>
+  <div class="card">
+    <div class="row">
+      <% @tweets.each do |tweet| %>
+        <div class="col-md-6">
+          <div class="tech-news">
+            <div class="card individualCard">
+              <%= twitter_parser tweet %>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
