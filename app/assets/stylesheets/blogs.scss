@@ -64,14 +64,14 @@ h6, .h6 {
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-  color: #0275d8;
+  color: #0275d8 !important;
 }
 
 .nav-link {
   position: relative;
-  padding: 1rem;
   font-weight: 500;
-  color: #0275d8 !important;
+  color: #fff;
+  padding: 3px;
 }
 .nav-link:hover,
 .nav-link:focus {
